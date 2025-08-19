@@ -75,199 +75,374 @@
             </div>
 
         <!-- Houses -->
-        <div class="grid grid-cols-5 gap-4 mb-8">
-            <div class="house bg-yellow-100 rounded-lg shadow-lg p-4 border-4 border-yellow-400" data-house="Vàng">
-                <div class="text-center mb-3">
-                    <div class="text-3xl mb-1">
-                        <svg width="32" height="32" viewBox="0 0 32 32" class="mx-auto">
-                            <rect x="4" y="12" width="24" height="16" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
-                            <polygon points="2,12 16,2 30,12" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
-                            <rect x="10" y="18" width="4" height="10" fill="#f59e0b"/>
-                            <rect x="18" y="16" width="6" height="6" fill="#fde68a" stroke="#f59e0b"/>
-                        </svg>
+        <div class="space-y-4 mb-8">
+            <!-- House 1 -->
+            <div class="house bg-slate-100 rounded-lg shadow-lg p-6 border-4 border-slate-400" data-house="1">
+                <div class="flex items-center gap-6">
+                    <div class="text-center">
+                        <div class="text-6xl mb-2 font-bold text-slate-700">1</div>
+                        <div class="font-bold text-slate-800 text-lg">Nhà số 1</div>
+                        <div class="flex justify-center gap-2 mt-2 min-h-[32px]" id="icons-1">
+                            <span class="pet-icon text-2xl" style="display: none;"></span>
+                            <span class="drink-icon text-2xl" style="display: none;"></span>
+                            <span class="job-icon text-2xl" style="display: none;"></span>
+                        </div>
                     </div>
-                    <div class="font-bold text-yellow-800">Nhà Vàng</div>
-                </div>
-                <div class="space-y-2">
-                    <div class="drop-zone" data-type="nationality" data-house="Vàng">
-                        <div class="text-xs text-yellow-700 p-1 font-medium">Quốc tịch</div>
-                    </div>
-                    <div class="drop-zone" data-type="pet" data-house="Vàng">
-                        <div class="text-xs text-yellow-700 p-1 font-medium">Thú cưng</div>
-                    </div>
-                    <div class="drop-zone" data-type="drink" data-house="Vàng">
-                        <div class="text-xs text-yellow-700 p-1 font-medium">Đồ uống</div>
-                    </div>
-                    <div class="drop-zone" data-type="job" data-house="Vàng">
-                        <div class="text-xs text-yellow-700 p-1 font-medium">Nghề nghiệp</div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="house bg-blue-100 rounded-lg shadow-lg p-4 border-4 border-blue-400" data-house="Xanh dương">
-                <div class="text-center mb-3">
-                    <div class="text-3xl mb-1">
-                        <svg width="32" height="32" viewBox="0 0 32 32" class="mx-auto">
-                            <rect x="4" y="12" width="24" height="16" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
-                            <polygon points="2,12 16,2 30,12" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
-                            <rect x="10" y="18" width="4" height="10" fill="#3b82f6"/>
-                            <rect x="18" y="16" width="6" height="6" fill="#93c5fd" stroke="#3b82f6"/>
-                        </svg>
-                    </div>
-                    <div class="font-bold text-blue-800">Nhà Xanh Dương</div>
-                </div>
-                <div class="space-y-2">
-                    <div class="drop-zone" data-type="nationality" data-house="Xanh dương">
-                        <div class="text-xs text-blue-700 p-1 font-medium">Quốc tịch</div>
-                    </div>
-                    <div class="drop-zone" data-type="pet" data-house="Xanh dương">
-                        <div class="text-xs text-blue-700 p-1 font-medium">Thú cưng</div>
-                    </div>
-                    <div class="drop-zone" data-type="drink" data-house="Xanh dương">
-                        <div class="text-xs text-blue-700 p-1 font-medium">Đồ uống</div>
-                    </div>
-                    <div class="drop-zone" data-type="job" data-house="Xanh dương">
-                        <div class="text-xs text-blue-700 p-1 font-medium">Nghề nghiệp</div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="house bg-red-100 rounded-lg shadow-lg p-4 border-4 border-red-400" data-house="Đỏ">
-                <div class="text-center mb-3">
-                    <div class="text-3xl mb-1">
-                        <svg width="32" height="32" viewBox="0 0 32 32" class="mx-auto">
-                            <rect x="4" y="12" width="24" height="16" fill="#fecaca" stroke="#dc2626" stroke-width="2"/>
-                            <polygon points="2,12 16,2 30,12" fill="#fecaca" stroke="#dc2626" stroke-width="2"/>
-                            <rect x="10" y="18" width="4" height="10" fill="#dc2626"/>
-                            <rect x="18" y="16" width="6" height="6" fill="#fca5a5" stroke="#dc2626"/>
-                        </svg>
-                    </div>
-                    <div class="font-bold text-red-800">Nhà Đỏ</div>
-                </div>
-                <div class="space-y-2">
-                    <div class="drop-zone" data-type="nationality" data-house="Đỏ">
-                        <div class="text-xs text-red-700 p-1 font-medium">Quốc tịch</div>
-                    </div>
-                    <div class="drop-zone" data-type="pet" data-house="Đỏ">
-                        <div class="text-xs text-red-700 p-1 font-medium">Thú cưng</div>
-                    </div>
-                    <div class="drop-zone" data-type="drink" data-house="Đỏ">
-                        <div class="text-xs text-red-700 p-1 font-medium">Đồ uống</div>
-                    </div>
-                    <div class="drop-zone" data-type="job" data-house="Đỏ">
-                        <div class="text-xs text-red-700 p-1 font-medium">Nghề nghiệp</div>
+                    <div class="grid grid-cols-5 gap-4 flex-1">
+                        <div>
+                            <label class="block text-sm font-medium text-slate-700 mb-2">Màu sắc</label>
+                            <select class="attribute-select w-full p-2 border border-slate-300 rounded-lg bg-white" data-house="1" data-type="color">
+                                <option value="">Chọn...</option>
+                                <option value="Vàng">🟡 Vàng</option>
+                                <option value="Xanh dương">🔵 Xanh dương</option>
+                                <option value="Đỏ">🔴 Đỏ</option>
+                                <option value="Trắng">⚪ Trắng</option>
+                                <option value="Xanh lá">🟢 Xanh lá</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-slate-700 mb-2">Quốc tịch</label>
+                            <select class="attribute-select w-full p-2 border border-slate-300 rounded-lg bg-white" data-house="1" data-type="nationality">
+                                <option value="">Chọn...</option>
+                                <option value="Anh">🇬🇧 Anh</option>
+                                <option value="Tây Ban Nha">🇪🇸 Tây Ban Nha</option>
+                                <option value="Ukraine">🇺🇦 Ukraine</option>
+                                <option value="Na Uy">🇳🇴 Na Uy</option>
+                                <option value="Nhật">🇯🇵 Nhật</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-slate-700 mb-2">Thú cưng</label>
+                            <select class="attribute-select w-full p-2 border border-slate-300 rounded-lg bg-white" data-house="1" data-type="pet">
+                                <option value="">Chọn...</option>
+                                <option value="Chó">🐕 Chó</option>
+                                <option value="Ốc sên">🐌 Ốc sên</option>
+                                <option value="Cáo">🦊 Cáo</option>
+                                <option value="Ngựa">🐎 Ngựa</option>
+                                <option value="Ngựa vằn">🦓 Ngựa vằn</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-slate-700 mb-2">Đồ uống</label>
+                            <select class="attribute-select w-full p-2 border border-slate-300 rounded-lg bg-white" data-house="1" data-type="drink">
+                                <option value="">Chọn...</option>
+                                <option value="Cà phê">☕ Cà phê</option>
+                                <option value="Trà">🍵 Trà</option>
+                                <option value="Sữa">🥛 Sữa</option>
+                                <option value="Nước cam">🍊 Nước cam</option>
+                                <option value="Nước">💧 Nước</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-slate-700 mb-2">Nghề nghiệp</label>
+                            <select class="attribute-select w-full p-2 border border-slate-300 rounded-lg bg-white" data-house="1" data-type="job">
+                                <option value="">Chọn...</option>
+                                <option value="Thợ mộc">🔨 Thợ mộc</option>
+                                <option value="Giáo viên">👨‍🏫 Giáo viên</option>
+                                <option value="Làm vườn">🌱 Làm vườn</option>
+                                <option value="Bác sĩ">👨‍⚕️ Bác sĩ</option>
+                                <option value="Thợ làm bánh">👨‍🍳 Thợ làm bánh</option>
+                            </select>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div class="house bg-gray-100 rounded-lg shadow-lg p-4 border-4 border-gray-400" data-house="Trắng">
-                <div class="text-center mb-3">
-                    <div class="text-3xl mb-1">
-                        <svg width="32" height="32" viewBox="0 0 32 32" class="mx-auto">
-                            <rect x="4" y="12" width="24" height="16" fill="#f8f9fa" stroke="#6b7280" stroke-width="2"/>
-                            <polygon points="2,12 16,2 30,12" fill="#f8f9fa" stroke="#6b7280" stroke-width="2"/>
-                            <rect x="10" y="18" width="4" height="10" fill="#6b7280"/>
-                            <rect x="18" y="16" width="6" height="6" fill="#ddd6fe" stroke="#6b7280"/>
-                        </svg>
+            <!-- House 2 -->
+            <div class="house bg-slate-100 rounded-lg shadow-lg p-6 border-4 border-slate-400" data-house="2">
+                <div class="flex items-center gap-6">
+                    <div class="text-center">
+                        <div class="text-6xl mb-2 font-bold text-slate-700">2</div>
+                        <div class="font-bold text-slate-800 text-lg">Nhà số 2</div>
+                        <div class="flex justify-center gap-2 mt-2 min-h-[32px]" id="icons-2">
+                            <span class="pet-icon text-2xl" style="display: none;"></span>
+                            <span class="drink-icon text-2xl" style="display: none;"></span>
+                            <span class="job-icon text-2xl" style="display: none;"></span>
+                        </div>
                     </div>
-                    <div class="font-bold text-gray-800">Nhà Trắng</div>
-                </div>
-                <div class="space-y-2">
-                    <div class="drop-zone" data-type="nationality" data-house="Trắng">
-                        <div class="text-xs text-gray-700 p-1 font-medium">Quốc tịch</div>
-                    </div>
-                    <div class="drop-zone" data-type="pet" data-house="Trắng">
-                        <div class="text-xs text-gray-700 p-1 font-medium">Thú cưng</div>
-                    </div>
-                    <div class="drop-zone" data-type="drink" data-house="Trắng">
-                        <div class="text-xs text-gray-700 p-1 font-medium">Đồ uống</div>
-                    </div>
-                    <div class="drop-zone" data-type="job" data-house="Trắng">
-                        <div class="text-xs text-gray-700 p-1 font-medium">Nghề nghiệp</div>
+                    <div class="grid grid-cols-5 gap-4 flex-1">
+                        <div>
+                            <label class="block text-sm font-medium text-slate-700 mb-2">Màu sắc</label>
+                            <select class="attribute-select w-full p-2 border border-slate-300 rounded-lg bg-white" data-house="2" data-type="color">
+                                <option value="">Chọn...</option>
+                                <option value="Vàng">🟡 Vàng</option>
+                                <option value="Xanh dương">🔵 Xanh dương</option>
+                                <option value="Đỏ">🔴 Đỏ</option>
+                                <option value="Trắng">⚪ Trắng</option>
+                                <option value="Xanh lá">🟢 Xanh lá</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-slate-700 mb-2">Quốc tịch</label>
+                            <select class="attribute-select w-full p-2 border border-slate-300 rounded-lg bg-white" data-house="2" data-type="nationality">
+                                <option value="">Chọn...</option>
+                                <option value="Anh">🇬🇧 Anh</option>
+                                <option value="Tây Ban Nha">🇪🇸 Tây Ban Nha</option>
+                                <option value="Ukraine">🇺🇦 Ukraine</option>
+                                <option value="Na Uy">🇳🇴 Na Uy</option>
+                                <option value="Nhật">🇯🇵 Nhật</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-slate-700 mb-2">Thú cưng</label>
+                            <select class="attribute-select w-full p-2 border border-slate-300 rounded-lg bg-white" data-house="2" data-type="pet">
+                                <option value="">Chọn...</option>
+                                <option value="Chó">🐕 Chó</option>
+                                <option value="Ốc sên">🐌 Ốc sên</option>
+                                <option value="Cáo">🦊 Cáo</option>
+                                <option value="Ngựa">🐎 Ngựa</option>
+                                <option value="Ngựa vằn">🦓 Ngựa vằn</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-slate-700 mb-2">Đồ uống</label>
+                            <select class="attribute-select w-full p-2 border border-slate-300 rounded-lg bg-white" data-house="2" data-type="drink">
+                                <option value="">Chọn...</option>
+                                <option value="Cà phê">☕ Cà phê</option>
+                                <option value="Trà">🍵 Trà</option>
+                                <option value="Sữa">🥛 Sữa</option>
+                                <option value="Nước cam">🍊 Nước cam</option>
+                                <option value="Nước">💧 Nước</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-slate-700 mb-2">Nghề nghiệp</label>
+                            <select class="attribute-select w-full p-2 border border-slate-300 rounded-lg bg-white" data-house="2" data-type="job">
+                                <option value="">Chọn...</option>
+                                <option value="Thợ mộc">🔨 Thợ mộc</option>
+                                <option value="Giáo viên">👨‍🏫 Giáo viên</option>
+                                <option value="Làm vườn">🌱 Làm vườn</option>
+                                <option value="Bác sĩ">👨‍⚕️ Bác sĩ</option>
+                                <option value="Thợ làm bánh">👨‍🍳 Thợ làm bánh</option>
+                            </select>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div class="house bg-green-100 rounded-lg shadow-lg p-4 border-4 border-green-400" data-house="Xanh lá">
-                <div class="text-center mb-3">
-                    <div class="text-3xl mb-1">
-                        <svg width="32" height="32" viewBox="0 0 32 32" class="mx-auto">
-                            <rect x="4" y="12" width="24" height="16" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
-                            <polygon points="2,12 16,2 30,12" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
-                            <rect x="10" y="18" width="4" height="10" fill="#16a34a"/>
-                            <rect x="18" y="16" width="6" height="6" fill="#86efac" stroke="#16a34a"/>
-                        </svg>
+            <!-- House 3 -->
+            <div class="house bg-slate-100 rounded-lg shadow-lg p-6 border-4 border-slate-400" data-house="3">
+                <div class="flex items-center gap-6">
+                    <div class="text-center">
+                        <div class="text-6xl mb-2 font-bold text-slate-700">3</div>
+                        <div class="font-bold text-slate-800 text-lg">Nhà số 3</div>
+                        <div class="flex justify-center gap-2 mt-2 min-h-[32px]" id="icons-3">
+                            <span class="pet-icon text-2xl" style="display: none;"></span>
+                            <span class="drink-icon text-2xl" style="display: none;"></span>
+                            <span class="job-icon text-2xl" style="display: none;"></span>
+                        </div>
                     </div>
-                    <div class="font-bold text-green-800">Nhà Xanh Lá</div>
+                    <div class="grid grid-cols-5 gap-4 flex-1">
+                        <div>
+                            <label class="block text-sm font-medium text-slate-700 mb-2">Màu sắc</label>
+                            <select class="attribute-select w-full p-2 border border-slate-300 rounded-lg bg-white" data-house="3" data-type="color">
+                                <option value="">Chọn...</option>
+                                <option value="Vàng">🟡 Vàng</option>
+                                <option value="Xanh dương">🔵 Xanh dương</option>
+                                <option value="Đỏ">🔴 Đỏ</option>
+                                <option value="Trắng">⚪ Trắng</option>
+                                <option value="Xanh lá">🟢 Xanh lá</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-slate-700 mb-2">Quốc tịch</label>
+                            <select class="attribute-select w-full p-2 border border-slate-300 rounded-lg bg-white" data-house="3" data-type="nationality">
+                                <option value="">Chọn...</option>
+                                <option value="Anh">🇬🇧 Anh</option>
+                                <option value="Tây Ban Nha">🇪🇸 Tây Ban Nha</option>
+                                <option value="Ukraine">🇺🇦 Ukraine</option>
+                                <option value="Na Uy">🇳🇴 Na Uy</option>
+                                <option value="Nhật">🇯🇵 Nhật</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-slate-700 mb-2">Thú cưng</label>
+                            <select class="attribute-select w-full p-2 border border-slate-300 rounded-lg bg-white" data-house="3" data-type="pet">
+                                <option value="">Chọn...</option>
+                                <option value="Chó">🐕 Chó</option>
+                                <option value="Ốc sên">🐌 Ốc sên</option>
+                                <option value="Cáo">🦊 Cáo</option>
+                                <option value="Ngựa">🐎 Ngựa</option>
+                                <option value="Ngựa vằn">🦓 Ngựa vằn</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-slate-700 mb-2">Đồ uống</label>
+                            <select class="attribute-select w-full p-2 border border-slate-300 rounded-lg bg-white" data-house="3" data-type="drink">
+                                <option value="">Chọn...</option>
+                                <option value="Cà phê">☕ Cà phê</option>
+                                <option value="Trà">🍵 Trà</option>
+                                <option value="Sữa">🥛 Sữa</option>
+                                <option value="Nước cam">🍊 Nước cam</option>
+                                <option value="Nước">💧 Nước</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-slate-700 mb-2">Nghề nghiệp</label>
+                            <select class="attribute-select w-full p-2 border border-slate-300 rounded-lg bg-white" data-house="3" data-type="job">
+                                <option value="">Chọn...</option>
+                                <option value="Thợ mộc">🔨 Thợ mộc</option>
+                                <option value="Giáo viên">👨‍🏫 Giáo viên</option>
+                                <option value="Làm vườn">🌱 Làm vườn</option>
+                                <option value="Bác sĩ">👨‍⚕️ Bác sĩ</option>
+                                <option value="Thợ làm bánh">👨‍🍳 Thợ làm bánh</option>
+                            </select>
+                        </div>
+                    </div>
                 </div>
-                <div class="space-y-2">
-                    <div class="drop-zone" data-type="nationality" data-house="Xanh lá">
-                        <div class="text-xs text-green-700 p-1 font-medium">Quốc tịch</div>
+            </div>
+
+            <!-- House 4 -->
+            <div class="house bg-slate-100 rounded-lg shadow-lg p-6 border-4 border-slate-400" data-house="4">
+                <div class="flex items-center gap-6">
+                    <div class="text-center">
+                        <div class="text-6xl mb-2 font-bold text-slate-700">4</div>
+                        <div class="font-bold text-slate-800 text-lg">Nhà số 4</div>
+                        <div class="flex justify-center gap-2 mt-2 min-h-[32px]" id="icons-4">
+                            <span class="pet-icon text-2xl" style="display: none;"></span>
+                            <span class="drink-icon text-2xl" style="display: none;"></span>
+                            <span class="job-icon text-2xl" style="display: none;"></span>
+                        </div>
                     </div>
-                    <div class="drop-zone" data-type="pet" data-house="Xanh lá">
-                        <div class="text-xs text-green-700 p-1 font-medium">Thú cưng</div>
+                    <div class="grid grid-cols-5 gap-4 flex-1">
+                        <div>
+                            <label class="block text-sm font-medium text-slate-700 mb-2">Màu sắc</label>
+                            <select class="attribute-select w-full p-2 border border-slate-300 rounded-lg bg-white" data-house="4" data-type="color">
+                                <option value="">Chọn...</option>
+                                <option value="Vàng">🟡 Vàng</option>
+                                <option value="Xanh dương">🔵 Xanh dương</option>
+                                <option value="Đỏ">🔴 Đỏ</option>
+                                <option value="Trắng">⚪ Trắng</option>
+                                <option value="Xanh lá">🟢 Xanh lá</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-slate-700 mb-2">Quốc tịch</label>
+                            <select class="attribute-select w-full p-2 border border-slate-300 rounded-lg bg-white" data-house="4" data-type="nationality">
+                                <option value="">Chọn...</option>
+                                <option value="Anh">🇬🇧 Anh</option>
+                                <option value="Tây Ban Nha">🇪🇸 Tây Ban Nha</option>
+                                <option value="Ukraine">🇺🇦 Ukraine</option>
+                                <option value="Na Uy">🇳🇴 Na Uy</option>
+                                <option value="Nhật">🇯🇵 Nhật</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-slate-700 mb-2">Thú cưng</label>
+                            <select class="attribute-select w-full p-2 border border-slate-300 rounded-lg bg-white" data-house="4" data-type="pet">
+                                <option value="">Chọn...</option>
+                                <option value="Chó">🐕 Chó</option>
+                                <option value="Ốc sên">🐌 Ốc sên</option>
+                                <option value="Cáo">🦊 Cáo</option>
+                                <option value="Ngựa">🐎 Ngựa</option>
+                                <option value="Ngựa vằn">🦓 Ngựa vằn</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-slate-700 mb-2">Đồ uống</label>
+                            <select class="attribute-select w-full p-2 border border-slate-300 rounded-lg bg-white" data-house="4" data-type="drink">
+                                <option value="">Chọn...</option>
+                                <option value="Cà phê">☕ Cà phê</option>
+                                <option value="Trà">🍵 Trà</option>
+                                <option value="Sữa">🥛 Sữa</option>
+                                <option value="Nước cam">🍊 Nước cam</option>
+                                <option value="Nước">💧 Nước</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-slate-700 mb-2">Nghề nghiệp</label>
+                            <select class="attribute-select w-full p-2 border border-slate-300 rounded-lg bg-white" data-house="4" data-type="job">
+                                <option value="">Chọn...</option>
+                                <option value="Thợ mộc">🔨 Thợ mộc</option>
+                                <option value="Giáo viên">👨‍🏫 Giáo viên</option>
+                                <option value="Làm vườn">🌱 Làm vườn</option>
+                                <option value="Bác sĩ">👨‍⚕️ Bác sĩ</option>
+                                <option value="Thợ làm bánh">👨‍🍳 Thợ làm bánh</option>
+                            </select>
+                        </div>
                     </div>
-                    <div class="drop-zone" data-type="drink" data-house="Xanh lá">
-                        <div class="text-xs text-green-700 p-1 font-medium">Đồ uống</div>
+                </div>
+            </div>
+
+            <!-- House 5 -->
+            <div class="house bg-slate-100 rounded-lg shadow-lg p-6 border-4 border-slate-400" data-house="5">
+                <div class="flex items-center gap-6">
+                    <div class="text-center">
+                        <div class="text-6xl mb-2 font-bold text-slate-700">5</div>
+                        <div class="font-bold text-slate-800 text-lg">Nhà số 5</div>
+                        <div class="flex justify-center gap-2 mt-2 min-h-[32px]" id="icons-5">
+                            <span class="pet-icon text-2xl" style="display: none;"></span>
+                            <span class="drink-icon text-2xl" style="display: none;"></span>
+                            <span class="job-icon text-2xl" style="display: none;"></span>
+                        </div>
                     </div>
-                    <div class="drop-zone" data-type="job" data-house="Xanh lá">
-                        <div class="text-xs text-green-700 p-1 font-medium">Nghề nghiệp</div>
+                    <div class="grid grid-cols-5 gap-4 flex-1">
+                        <div>
+                            <label class="block text-sm font-medium text-slate-700 mb-2">Màu sắc</label>
+                            <select class="attribute-select w-full p-2 border border-slate-300 rounded-lg bg-white" data-house="5" data-type="color">
+                                <option value="">Chọn...</option>
+                                <option value="Vàng">🟡 Vàng</option>
+                                <option value="Xanh dương">🔵 Xanh dương</option>
+                                <option value="Đỏ">🔴 Đỏ</option>
+                                <option value="Trắng">⚪ Trắng</option>
+                                <option value="Xanh lá">🟢 Xanh lá</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-slate-700 mb-2">Quốc tịch</label>
+                            <select class="attribute-select w-full p-2 border border-slate-300 rounded-lg bg-white" data-house="5" data-type="nationality">
+                                <option value="">Chọn...</option>
+                                <option value="Anh">🇬🇧 Anh</option>
+                                <option value="Tây Ban Nha">🇪🇸 Tây Ban Nha</option>
+                                <option value="Ukraine">🇺🇦 Ukraine</option>
+                                <option value="Na Uy">🇳🇴 Na Uy</option>
+                                <option value="Nhật">🇯🇵 Nhật</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-slate-700 mb-2">Thú cưng</label>
+                            <select class="attribute-select w-full p-2 border border-slate-300 rounded-lg bg-white" data-house="5" data-type="pet">
+                                <option value="">Chọn...</option>
+                                <option value="Chó">🐕 Chó</option>
+                                <option value="Ốc sên">🐌 Ốc sên</option>
+                                <option value="Cáo">🦊 Cáo</option>
+                                <option value="Ngựa">🐎 Ngựa</option>
+                                <option value="Ngựa vằn">🦓 Ngựa vằn</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-slate-700 mb-2">Đồ uống</label>
+                            <select class="attribute-select w-full p-2 border border-slate-300 rounded-lg bg-white" data-house="5" data-type="drink">
+                                <option value="">Chọn...</option>
+                                <option value="Cà phê">☕ Cà phê</option>
+                                <option value="Trà">🍵 Trà</option>
+                                <option value="Sữa">🥛 Sữa</option>
+                                <option value="Nước cam">🍊 Nước cam</option>
+                                <option value="Nước">💧 Nước</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-slate-700 mb-2">Nghề nghiệp</label>
+                            <select class="attribute-select w-full p-2 border border-slate-300 rounded-lg bg-white" data-house="5" data-type="job">
+                                <option value="">Chọn...</option>
+                                <option value="Thợ mộc">🔨 Thợ mộc</option>
+                                <option value="Giáo viên">👨‍🏫 Giáo viên</option>
+                                <option value="Làm vườn">🌱 Làm vườn</option>
+                                <option value="Bác sĩ">👨‍⚕️ Bác sĩ</option>
+                                <option value="Thợ làm bánh">👨‍🍳 Thợ làm bánh</option>
+                            </select>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
 
+        <!-- Control Panel and Clues -->
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            <!-- Draggable Items -->
+            <!-- Control Panel -->
             <div class="bg-white rounded-lg shadow-lg p-6">
-                <h3 class="text-xl font-bold text-gray-800 mb-4">🎯 Kéo thả các thuộc tính</h3>
+                <h3 class="text-xl font-bold text-gray-800 mb-4">🎮 Điều khiển trò chơi</h3>
                 
-                <div class="mb-4">
-                    <h4 class="font-semibold text-gray-700 mb-2">Quốc tịch:</h4>
-                    <div class="flex flex-wrap gap-2">
-                        <div class="draggable bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm" draggable="true" data-type="nationality" data-value="Anh">🇬🇧 Anh</div>
-                        <div class="draggable bg-red-100 text-red-800 px-3 py-1 rounded-full text-sm" draggable="true" data-type="nationality" data-value="Tây Ban Nha">🇪🇸 Tây Ban Nha</div>
-                        <div class="draggable bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm" draggable="true" data-type="nationality" data-value="Ukraine">🇺🇦 Ukraine</div>
-                        <div class="draggable bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm" draggable="true" data-type="nationality" data-value="Na Uy">🇳🇴 Na Uy</div>
-                        <div class="draggable bg-red-100 text-red-800 px-3 py-1 rounded-full text-sm" draggable="true" data-type="nationality" data-value="Nhật">🇯🇵 Nhật</div>
-                    </div>
-                </div>
-
-
-
-                <div class="mb-4">
-                    <h4 class="font-semibold text-gray-700 mb-2">Thú cưng:</h4>
-                    <div class="flex flex-wrap gap-2">
-                        <div class="draggable bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-sm" draggable="true" data-type="pet" data-value="Chó">🐕 Chó</div>
-                        <div class="draggable bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm" draggable="true" data-type="pet" data-value="Ốc sên">🐌 Ốc sên</div>
-                        <div class="draggable bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-sm" draggable="true" data-type="pet" data-value="Cáo">🦊 Cáo</div>
-                        <div class="draggable bg-brown-100 text-brown-800 px-3 py-1 rounded-full text-sm" draggable="true" data-type="pet" data-value="Ngựa">🐎 Ngựa</div>
-                        <div class="draggable bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm" draggable="true" data-type="pet" data-value="Ngựa vằn">🦓 Ngựa vằn</div>
-                    </div>
-                </div>
-
-                <div class="mb-4">
-                    <h4 class="font-semibold text-gray-700 mb-2">Đồ uống:</h4>
-                    <div class="flex flex-wrap gap-2">
-                        <div class="draggable bg-brown-100 text-brown-800 px-3 py-1 rounded-full text-sm" draggable="true" data-type="drink" data-value="Cà phê">☕ Cà phê</div>
-                        <div class="draggable bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm" draggable="true" data-type="drink" data-value="Trà">🍵 Trà</div>
-                        <div class="draggable bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm" draggable="true" data-type="drink" data-value="Sữa">🥛 Sữa</div>
-                        <div class="draggable bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-sm" draggable="true" data-type="drink" data-value="Nước cam">🍊 Nước cam</div>
-                        <div class="draggable bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm" draggable="true" data-type="drink" data-value="Nước">💧 Nước</div>
-                    </div>
-                </div>
-
-                <div class="mb-4">
-                    <h4 class="font-semibold text-gray-700 mb-2">Nghề nghiệp:</h4>
-                    <div class="flex flex-wrap gap-2">
-                        <div class="draggable bg-brown-100 text-brown-800 px-3 py-1 rounded-full text-sm" draggable="true" data-type="job" data-value="Thợ mộc">🔨 Thợ mộc</div>
-                        <div class="draggable bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm" draggable="true" data-type="job" data-value="Giáo viên">👨‍🏫 Giáo viên</div>
-                        <div class="draggable bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm" draggable="true" data-type="job" data-value="Làm vườn">🌱 Làm vườn</div>
-                        <div class="draggable bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm" draggable="true" data-type="job" data-value="Bác sĩ">👨‍⚕️ Bác sĩ</div>
-                        <div class="draggable bg-pink-100 text-pink-800 px-3 py-1 rounded-full text-sm" draggable="true" data-type="job" data-value="Thợ làm bánh">👨‍🍳 Thợ làm bánh</div>
-                    </div>
-                </div>
-
                 <div class="mt-6 flex gap-4">
                     <button id="checkSolution" class="bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded-lg font-semibold transition-colors disabled:bg-gray-400 disabled:cursor-not-allowed" disabled>
                         ✅ Kiểm tra đáp án
@@ -277,7 +452,14 @@
                     </button>
                 </div>
                 <div id="progressInfo" class="mt-4 text-sm text-gray-600 text-center">
-                    Điền tất cả thuộc tính để kiểm tra đáp án (0/20)
+                    Điền tất cả thuộc tính để kiểm tra đáp án (0/25)
+                </div>
+
+                <div class="mt-6 p-4 bg-blue-50 border-l-4 border-blue-400 rounded">
+                    <h4 class="font-bold text-blue-800 mb-2">📋 Hướng dẫn:</h4>
+                    <p class="text-blue-700 text-sm">• Chọn thuộc tính từ danh sách thả xuống cho mỗi ngôi nhà</p>
+                    <p class="text-blue-700 text-sm">• Mỗi thuộc tính chỉ có thể được sử dụng một lần</p>
+                    <p class="text-blue-700 text-sm">• Sử dụng các gợi ý để tìm ra đáp án đúng</p>
                 </div>
             </div>
 
@@ -289,7 +471,7 @@
                     <div class="clue p-3 bg-gray-50 rounded-lg">• Người Tây Ban Nha sở hữu con chó</div>
                     <div class="clue p-3 bg-gray-50 rounded-lg">• Cà phê được uống trong ngôi nhà màu xanh lá</div>
                     <div class="clue p-3 bg-gray-50 rounded-lg">• Người Ukraine uống trà</div>
-                    <div class="clue p-3 bg-gray-50 rounded-lg">• Ngôi nhà màu xanh lá nằm ngay bên phải ngôi nhà màu trắng</div>
+                    <div class="clue p-3 bg-gray-50 rounded-lg">• Ngôi nhà màu xanh lá nằm ngay phía dưới ngôi nhà màu trắng</div>
                     <div class="clue p-3 bg-gray-50 rounded-lg">• Thợ mộc sở hữu ốc sên</div>
                     <div class="clue p-3 bg-gray-50 rounded-lg">• Giáo viên sống trong ngôi nhà màu vàng</div>
                     <div class="clue p-3 bg-gray-50 rounded-lg">• Sữa được uống trong ngôi nhà số 3</div>
@@ -328,24 +510,30 @@
         let playerName = '';
         let startTime = null;
         let timerInterval = null;
-        let usedItems = new Set(); // Track used items
-
-        // Game state - using color as house identifier
-        let gameState = {
-            "Vàng": {nationality: null, pet: null, drink: null, job: null},
-            "Xanh dương": {nationality: null, pet: null, drink: null, job: null},
-            "Đỏ": {nationality: null, pet: null, drink: null, job: null},
-            "Trắng": {nationality: null, pet: null, drink: null, job: null},
-            "Xanh lá": {nationality: null, pet: null, drink: null, job: null}
+        let usedItems = {
+            color: new Set(),
+            nationality: new Set(),
+            pet: new Set(),
+            drink: new Set(),
+            job: new Set()
         };
 
-        // Correct solution - using color as house identifier
+        // Game state - using house number as identifier
+        let gameState = {
+            "1": {color: null, nationality: null, pet: null, drink: null, job: null},
+            "2": {color: null, nationality: null, pet: null, drink: null, job: null},
+            "3": {color: null, nationality: null, pet: null, drink: null, job: null},
+            "4": {color: null, nationality: null, pet: null, drink: null, job: null},
+            "5": {color: null, nationality: null, pet: null, drink: null, job: null}
+        };
+
+        // Correct solution - using house number as identifier
         const correctSolution = {
-            "Vàng": {nationality: "Na Uy", pet: "Cáo", drink: "Nước", job: "Giáo viên"},
-            "Xanh dương": {nationality: "Ukraine", pet: "Ngựa", drink: "Trà", job: "Làm vườn"},
-            "Đỏ": {nationality: "Anh", pet: "Ốc sên", drink: "Sữa", job: "Thợ mộc"},
-            "Trắng": {nationality: "Tây Ban Nha", pet: "Chó", drink: "Nước cam", job: "Bác sĩ"},
-            "Xanh lá": {nationality: "Nhật", pet: "Ngựa vằn", drink: "Cà phê", job: "Thợ làm bánh"}
+            "1": {color: "Vàng", nationality: "Na Uy", pet: "Cáo", drink: "Nước", job: "Giáo viên"},
+            "2": {color: "Xanh dương", nationality: "Ukraine", pet: "Ngựa", drink: "Trà", job: "Làm vườn"},
+            "3": {color: "Đỏ", nationality: "Anh", pet: "Ốc sên", drink: "Sữa", job: "Thợ mộc"},
+            "4": {color: "Trắng", nationality: "Tây Ban Nha", pet: "Chó", drink: "Nước cam", job: "Bác sĩ"},
+            "5": {color: "Xanh lá", nationality: "Nhật", pet: "Ngựa vằn", drink: "Cà phê", job: "Thợ làm bánh"}
         };
 
         // Login functionality
@@ -407,96 +595,216 @@
             return '00:00';
         }
 
-        // Drag and drop functionality
-        let draggedElement = null;
+        // Dropdown functionality
+        document.querySelectorAll('.attribute-select').forEach(select => {
+            select.addEventListener('change', function() {
+                const house = this.dataset.house;
+                const type = this.dataset.type;
+                const newValue = this.value;
+                const oldValue = gameState[house][type];
 
-        document.querySelectorAll('.draggable').forEach(item => {
-            item.addEventListener('dragstart', function(e) {
-                draggedElement = this;
-                this.classList.add('dragging');
-                e.dataTransfer.effectAllowed = 'move';
-            });
-
-            item.addEventListener('dragend', function(e) {
-                this.classList.remove('dragging');
-                draggedElement = null;
-            });
-        });
-
-        document.querySelectorAll('.drop-zone').forEach(zone => {
-            zone.addEventListener('dragover', function(e) {
-                e.preventDefault();
-                this.classList.add('drag-over');
-            });
-
-            zone.addEventListener('dragleave', function(e) {
-                this.classList.remove('drag-over');
-            });
-
-            zone.addEventListener('drop', function(e) {
-                e.preventDefault();
-                this.classList.remove('drag-over');
-                
-                if (draggedElement && draggedElement.dataset.type === this.dataset.type) {
-                    // Remove any existing item in this slot
-                    const existingItem = this.querySelector('.draggable');
-                    if (existingItem) {
-                        // Return the existing item to available items
-                        const existingValue = existingItem.dataset.value;
-                        usedItems.delete(existingValue);
-                        existingItem.remove();
-                    }
-
-                    // Clone the dragged element
-                    const clonedElement = draggedElement.cloneNode(true);
-                    clonedElement.classList.remove('dragging');
-                    
-                    // Add to used items and hide original
-                    const itemValue = draggedElement.dataset.value;
-                    usedItems.add(itemValue);
-                    draggedElement.style.display = 'none';
-                    
-                    // Add remove functionality
-                    clonedElement.addEventListener('click', function() {
-                        // Return item to available items
-                        usedItems.delete(itemValue);
-                        draggedElement.style.display = 'inline-block';
-                        this.remove();
-                        updateGameState();
-                    });
-
-                    this.appendChild(clonedElement);
-                    updateGameState();
+                // If there was an old value, remove it from used items
+                if (oldValue) {
+                    usedItems[type].delete(oldValue);
                 }
+
+                // If new value is selected, add it to used items
+                if (newValue) {
+                    usedItems[type].add(newValue);
+                }
+
+                // Update game state
+                gameState[house][type] = newValue || null;
+
+                // Update house color if color attribute changed
+                if (type === 'color') {
+                    updateHouseColor(house, newValue);
+                }
+
+                // Update house flag if nationality attribute changed
+                if (type === 'nationality') {
+                    updateHouseFlag(house, newValue);
+                }
+
+                // Update house icons for pet, drink, job
+                if (type === 'pet' || type === 'drink' || type === 'job') {
+                    updateHouseIcons(house, type, newValue);
+                }
+
+                // Update all dropdowns to reflect used items
+                updateDropdownOptions();
+                updateProgress();
             });
         });
 
-        function updateGameState() {
-            // Reset game state
-            for (let house in gameState) {
-                for (let type in gameState[house]) {
-                    gameState[house][type] = null;
+        function updateHouseColor(houseNumber, color) {
+            const houseElement = document.querySelector(`[data-house="${houseNumber}"]`);
+            
+            // Reset to default color first
+            houseElement.className = 'house bg-slate-100 rounded-lg shadow-lg p-6 border-4 border-slate-400';
+            
+            // Apply new color if selected
+            if (color) {
+                switch(color) {
+                    case 'Vàng':
+                        houseElement.className = 'house bg-yellow-100 rounded-lg shadow-lg p-6 border-4 border-yellow-400';
+                        break;
+                    case 'Xanh dương':
+                        houseElement.className = 'house bg-blue-100 rounded-lg shadow-lg p-6 border-4 border-blue-400';
+                        break;
+                    case 'Đỏ':
+                        houseElement.className = 'house bg-red-100 rounded-lg shadow-lg p-6 border-4 border-red-400';
+                        break;
+                    case 'Trắng':
+                        houseElement.className = 'house bg-gray-50 rounded-lg shadow-lg p-6 border-4 border-gray-300';
+                        break;
+                    case 'Xanh lá':
+                        houseElement.className = 'house bg-green-100 rounded-lg shadow-lg p-6 border-4 border-green-400';
+                        break;
                 }
             }
+        }
 
-            // Update game state based on current placements
-            document.querySelectorAll('.drop-zone').forEach(zone => {
-                const item = zone.querySelector('.draggable');
-                if (item) {
-                    const house = zone.dataset.house;
-                    const type = zone.dataset.type;
-                    const value = item.dataset.value;
-                    gameState[house][type] = value;
+        function updateHouseFlag(houseNumber, nationality) {
+            const houseNumberElement = document.querySelector(`[data-house="${houseNumber}"] .text-6xl`);
+            
+            // Reset to default number first
+            houseNumberElement.innerHTML = houseNumber;
+            houseNumberElement.className = 'text-6xl mb-2 font-bold text-slate-700';
+            
+            // Apply flag image if nationality is selected
+            if (nationality) {
+                let flagSvg = '';
+                switch(nationality) {
+                    case 'Anh':
+                        flagSvg = `<svg class="w-16 h-12 mx-auto" viewBox="0 0 60 30" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="60" height="30" fill="#012169"/>
+                            <g stroke="#fff" stroke-width="6">
+                                <path d="m0,0 60,30 m0,-30 -60,30"/>
+                            </g>
+                            <g stroke="#C8102E" stroke-width="4">
+                                <path d="m0,0 60,30 m0,-30 -60,30"/>
+                            </g>
+                            <path stroke="#fff" stroke-width="10" d="M30,0 v30 M0,15 h60"/>
+                            <path stroke="#C8102E" stroke-width="6" d="M30,0 v30 M0,15 h60"/>
+                        </svg>`;
+                        break;
+                    case 'Tây Ban Nha':
+                        flagSvg = `<svg class="w-16 h-12 mx-auto" viewBox="0 0 60 30" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="60" height="30" fill="#AA151B"/>
+                            <rect width="60" height="15" y="7.5" fill="#F1BF00"/>
+                        </svg>`;
+                        break;
+                    case 'Ukraine':
+                        flagSvg = `<svg class="w-16 h-12 mx-auto" viewBox="0 0 60 30" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="60" height="15" fill="#005BBB"/>
+                            <rect width="60" height="15" y="15" fill="#FFD500"/>
+                        </svg>`;
+                        break;
+                    case 'Na Uy':
+                        flagSvg = `<svg class="w-16 h-12 mx-auto" viewBox="0 0 60 30" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="60" height="30" fill="#BA0C2F"/>
+                            <rect width="60" height="6" y="12" fill="#fff"/>
+                            <rect width="6" height="30" x="18" fill="#fff"/>
+                            <rect width="60" height="2" y="14" fill="#00205B"/>
+                            <rect width="2" height="30" x="20" fill="#00205B"/>
+                        </svg>`;
+                        break;
+                    case 'Nhật':
+                        flagSvg = `<svg class="w-16 h-12 mx-auto" viewBox="0 0 60 30" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="60" height="30" fill="#fff"/>
+                            <circle cx="30" cy="15" r="9" fill="#BC002D"/>
+                        </svg>`;
+                        break;
                 }
-            });
+                houseNumberElement.innerHTML = flagSvg;
+                houseNumberElement.className = 'mb-2 flex justify-center items-center';
+            }
+        }
 
-            // Update progress and enable/disable check button
+        function updateHouseIcons(houseNumber, type, value) {
+            const iconsContainer = document.getElementById(`icons-${houseNumber}`);
+            let iconElement;
+            
+            if (type === 'pet') {
+                iconElement = iconsContainer.querySelector('.pet-icon');
+            } else if (type === 'drink') {
+                iconElement = iconsContainer.querySelector('.drink-icon');
+            } else if (type === 'job') {
+                iconElement = iconsContainer.querySelector('.job-icon');
+            }
+            
+            if (!iconElement) return;
+            
+            // Hide icon if no value selected
+            if (!value) {
+                iconElement.style.display = 'none';
+                iconElement.textContent = '';
+                return;
+            }
+            
+            // Show and update icon based on value
+            iconElement.style.display = 'inline-block';
+            
+            let icon = '';
+            switch(value) {
+                // Pet icons
+                case 'Chó': icon = '🐕'; break;
+                case 'Ốc sên': icon = '🐌'; break;
+                case 'Cáo': icon = '🦊'; break;
+                case 'Ngựa': icon = '🐎'; break;
+                case 'Ngựa vằn': icon = '🦓'; break;
+                
+                // Drink icons
+                case 'Cà phê': icon = '☕'; break;
+                case 'Trà': icon = '🍵'; break;
+                case 'Sữa': icon = '🥛'; break;
+                case 'Nước cam': icon = '🍊'; break;
+                case 'Nước': icon = '💧'; break;
+                
+                // Job icons
+                case 'Thợ mộc': icon = '🔨'; break;
+                case 'Giáo viên': icon = '👨‍🏫'; break;
+                case 'Làm vườn': icon = '🌱'; break;
+                case 'Bác sĩ': icon = '👨‍⚕️'; break;
+                case 'Thợ làm bánh': icon = '👨‍🍳'; break;
+                
+                default: icon = '';
+            }
+            
+            iconElement.textContent = icon;
+        }
+
+        function updateDropdownOptions() {
+            document.querySelectorAll('.attribute-select').forEach(select => {
+                const type = select.dataset.type;
+                const house = select.dataset.house;
+                const currentValue = gameState[house][type];
+
+                // Update options availability
+                Array.from(select.options).forEach(option => {
+                    if (option.value === '') return; // Skip empty option
+                    
+                    if (usedItems[type].has(option.value) && option.value !== currentValue) {
+                        option.disabled = true;
+                        option.style.color = '#9ca3af';
+                    } else {
+                        option.disabled = false;
+                        option.style.color = '';
+                    }
+                });
+            });
+        }
+
+        function updateGameState() {
+            // Game state is already updated in the dropdown change handler
+            // Just update progress
             updateProgress();
         }
 
         function updateProgress() {
             let filledSlots = 0;
-            const totalSlots = 20; // 5 houses × 4 attributes each
+            const totalSlots = 25; // 5 houses × 5 attributes each
 
             for (let house in gameState) {
                 for (let type in gameState[house]) {
@@ -526,7 +834,7 @@
         function checkSolution() {
             let correct = true;
             let correctCount = 0;
-            let totalSlots = 20;
+            let totalSlots = 25;
 
             for (let house in correctSolution) {
                 for (let type in correctSolution[house]) {
@@ -551,8 +859,8 @@
                     <p class="text-lg font-semibold text-blue-600 mb-4">⏱️ Thời gian hoàn thành: ${completionTime}</p>
                     <div class="bg-green-50 p-4 rounded-lg">
                         <p class="font-semibold text-green-800">Đáp án:</p>
-                        <p class="text-green-700">• Người Na Uy (nhà vàng) uống nước</p>
-                        <p class="text-green-700">• Người Nhật (nhà xanh lá) sở hữu ngựa vằn</p>
+                        <p class="text-green-700">• Người Na Uy (nhà số 1) uống nước</p>
+                        <p class="text-green-700">• Người Nhật (nhà số 5) sở hữu ngựa vằn</p>
                     </div>
                 `;
             } else {
@@ -571,12 +879,34 @@
 
 
         function resetGame() {
-            document.querySelectorAll('.drop-zone .draggable').forEach(item => item.remove());
-            // Show all hidden items
-            document.querySelectorAll('.draggable[style*="display: none"]').forEach(item => {
-                item.style.display = 'inline-block';
+            // Reset all dropdowns
+            document.querySelectorAll('.attribute-select').forEach(select => {
+                select.value = '';
             });
-            usedItems.clear();
+
+            // Reset game state
+            for (let house in gameState) {
+                for (let type in gameState[house]) {
+                    gameState[house][type] = null;
+                }
+            }
+
+            // Reset used items
+            for (let type in usedItems) {
+                usedItems[type].clear();
+            }
+
+            // Reset all house colors, flags, and icons to default
+            for (let i = 1; i <= 5; i++) {
+                updateHouseColor(i.toString(), null);
+                updateHouseFlag(i.toString(), null);
+                // Reset icons
+                updateHouseIcons(i.toString(), 'pet', null);
+                updateHouseIcons(i.toString(), 'drink', null);
+                updateHouseIcons(i.toString(), 'job', null);
+            }
+
+            updateDropdownOptions();
             updateGameState();
         }
 
@@ -596,5 +926,5 @@
             }
         });
     </script>
-<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9716a2854325c9c6',t:'MTc1NTU3NDg4Mi4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9716efa25585e60e',t:'MTc1NTU3ODA0MS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
